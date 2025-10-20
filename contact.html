@@ -4,11 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا - دليل فعاليات المدينة</title>
+    <title data-translate-key="contact_page_title">اتصل بنا - دليل فعاليات المدينة</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Optional: better alignment for flags */
+        .lang-switcher a {
+            cursor: pointer;
+        }
+        
+        .lang-switcher img {
+            width: 25px;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +27,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" alt="شعار دليل فعاليات المدينة" width="40" height="40" class="d-inline-block align-text-top me-2"> دليل فعاليات المدينة
+                    <img src="img/logo.png" alt="شعار دليل فعاليات المدينة" width="40" height="40" class="d-inline-block align-text-top me-2"> <span data-translate-key="navbar_brand">دليل فعاليات المدينة</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,16 +35,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">الرئيسية</a>
+                            <a class="nav-link" href="index.html" data-translate-key="nav_home">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="events.html">الفعاليات</a>
+                            <a class="nav-link" href="events.html" data-translate-key="nav_events">الفعاليات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">عن الدليل</a>
+                            <a class="nav-link" href="about.html" data-translate-key="nav_about">عن الدليل</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">اتصل بنا</a>
+                            <a class="nav-link active" href="contact.html" data-translate-key="nav_contact">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center ms-lg-3">
+                            <button class="btn btn-outline-light btn-sm me-2" id="themeToggle" onclick="toggleTheme()">
+                                <i class="fas fa-moon" id="themeIcon"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item d-flex align-items-center lang-switcher ms-lg-3">
+                            <a class="nav-link p-1 mx-1" onclick="setLanguage('ar')"><img src="https://flagcdn.com/w40/sy.png" alt="العربية"></a>
+                            <a class="nav-link p-1 mx-1" onclick="setLanguage('en')"><img src="https://flagcdn.com/w40/us.png" alt="English"></a>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +62,7 @@
     </header>
 
     <main class="container my-5">
-        <h1 class="text-center mb-4">اتصل بنا</h1>
+        <h1 class="text-center mb-4" data-translate-key="contact_title">اتصل بنا</h1>
 
         <div class="row">
             <div class="col-md-8">
@@ -152,22 +172,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5>دليل فعاليات المدينة</h5>
-                    <p>منصة شاملة للتعريف على جميع الفعاليات والأنشطة في المدينة.</p>
+                    <h5 data-translate-key="navbar_brand">دليل فعاليات المدينة</h5>
+                    <p data-translate-key="footer_platform_desc">منصة شاملة للتعريف على جميع الفعاليات والأنشطة في المدينة.</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>روابط سريعة</h5>
+                    <h5 data-translate-key="footer_quick_links">روابط سريعة</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">الرئيسية</a></li>
-                        <li><a href="events.html" class="text-white">الفعاليات</a></li>
-                        <li><a href="about.html" class="text-white">عن الدليل</a></li>
-                        <li><a href="contact.html" class="text-white">اتصل بنا</a></li>
+                        <li><a href="index.html" class="text-white" data-translate-key="nav_home">الرئيسية</a></li>
+                        <li><a href="events.html" class="text-white" data-translate-key="nav_events">الفعاليات</a></li>
+                        <li><a href="about.html" class="text-white" data-translate-key="nav_about">عن الدليل</a></li>
+                        <li><a href="contact.html" class="text-white" data-translate-key="nav_contact">اتصل بنا</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h5>تواصل معنا</h5>
-                    <p>البريد الإلكتروني: Info36@CityEvents.com</p>
-                    <p>الهاتف: 442267109</p>
+                    <h5 data-translate-key="footer_contact_us">تواصل معنا</h5>
+                    <p data-translate-key="footer_email">البريد الإلكتروني: Info36@CityEvents.com</p>
+                    <p data-translate-key="footer_phone">الهاتف: 442267109</p>
                     <div class="social-links">
                         <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
@@ -177,9 +197,9 @@
             </div>
             <hr>
             <div class="text-center">
-                <p class="mb-0">© 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
-                <p>تم تنشاء هذا الموقع من أجل مشروع مقرر برمجة الويب 1 ,الجامعة الافتراضية السورية</p>
-                <p>فريق العمل: [mohammed_285844 , mohammed_234639 , Nejad_al_zenbarakji_232529 , mohamad_286892]</p>
+                <p class="mb-0" data-translate-key="footer_copyright">© 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+                <p data-translate-key="footer_project_info">تم تنشاء هذا الموقع من أجل مشروع مقرر برمجة الويب 1 ,الجامعة الافتراضية السورية</p>
+                <p data-translate-key="footer_team_members">فريق العمل: [mohammed_285844 , mohammed_234639 , Nejad_al_zenbarakji_232529 , mohamad_286892]</p>
             </div>
         </div>
     </footer>
@@ -187,6 +207,64 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const translations = {
+            ar: {
+                contact_page_title: "اتصل بنا - دليل فعاليات المدينة",
+                navbar_brand: "دليل فعاليات المدينة",
+                nav_home: "الرئيسية",
+                nav_events: "الفعاليات",
+                nav_about: "عن الدليل",
+                nav_contact: "اتصل بنا",
+                contact_title: "اتصل بنا",
+                footer_platform_desc: "منصة شاملة للتعريف على جميع الفعاليات والأنشطة في المدينة.",
+                footer_quick_links: "روابط سريعة",
+                footer_contact_us: "تواصل معنا",
+                footer_email: "البريد الإلكتروني: Info36@CityEvents.com",
+                footer_phone: "الهاتف: 442267109",
+                footer_copyright: "© 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.",
+                footer_project_info: "تم تنشاء هذا الموقع من أجل مشروع مقرر برمجة الويب 1 ,الجامعة الافتراضية السورية",
+                footer_team_members: "فريق العمل: [mohammed_285844 , mohammed_234639 , Nejad_al_zenbarakji_232529 , mohamad_286892]",
+            },
+            en: {
+                contact_page_title: "Contact Us - City Events Guide",
+                navbar_brand: "City Events Guide",
+                nav_home: "Home",
+                nav_events: "Events",
+                nav_about: "About",
+                nav_contact: "Contact Us",
+                contact_title: "Contact Us",
+                footer_platform_desc: "A comprehensive platform to introduce all events and activities in the city.",
+                footer_quick_links: "Quick Links",
+                footer_contact_us: "Contact Us",
+                footer_email: "Email: Info36@CityEvents.com",
+                footer_phone: "Phone: 442267109",
+                footer_copyright: "© 2025 City Events Guide. All rights reserved.",
+                footer_project_info: "This website was created for the Web Programming 1 course project, Syrian Virtual University.",
+                footer_team_members: "Team Members: [mohammed_285844 , mohammed_234639 , Nejad_al_zenbarakji_232529 , mohamad_286892]",
+            }
+        };
+
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-translate-key]').forEach(element => {
+                const key = element.getAttribute('data-translate-key');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            const html = document.documentElement;
+            html.setAttribute('lang', lang);
+            html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            localStorage.setItem('language', lang);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('language') || 'ar';
+            setLanguage(savedLang);
+        });
+    </script>
 </body>
 
 </html>
