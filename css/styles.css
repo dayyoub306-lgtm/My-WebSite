@@ -1,0 +1,490 @@
+:root {
+    --primary-color: #c31a26;
+    --secondary-color: #7d14fd;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+
+/* تخصيص الألوان */
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* تخصيص Navbar */
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+/* تخصيص البطاقات */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* تخصيص Carousel */
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* تخصيص الأزرار */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+}
+
+
+/* تخصيص الفوتر */
+
+footer {
+    margin-top: auto;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-color) !important;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+}
+
+
+/* تخصيص الفلاتر */
+
+.category-filter {
+    margin-bottom: 0.5rem;
+}
+
+
+/* تخصيص النماذج */
+
+.form-control {
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+
+/* تأثيرات للعناصر التفاعلية */
+
+.event-card {
+    cursor: pointer;
+}
+
+
+/* تصميم متجاوب إضافي */
+
+@media (max-width: 768px) {
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+.btn-social {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* تخصيص البطاقات في صفحة عنا */
+
+.team-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+/* تخصيص Accordion في صفحة عنا */
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+
+/* تخصيص الخريطة في صفحة اتصل بنا */
+
+.ratio iframe {
+    border-radius: 8px;
+}
+
+
+/* تخصيص نموذج الاتصال */
+
+.form-label {
+    font-weight: 600;
+}
+
+
+/* تخصيص Pagination في صفحة الفعاليات */
+
+.pagination .page-link {
+    color: var(--primary-color);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/* تخصيص الفلاتر في صفحة الفعاليات */
+
+#categoryFilter,
+#dateFilter {
+    cursor: pointer;
+}
+
+
+/* تأثيرات للبطاقات في صفحة الفريق */
+
+.team-card {
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* تخصيص الأكورديون في صفحة السياسات */
+
+.accordion-button {
+    font-weight: 600;
+}
+
+
+/* تخصيص العناوين */
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+
+/* تخصيص الأزرار في صفحة التفاصيل */
+
+#addToCalendar,
+#shareEvent {
+    padding: 0.5rem 1.5rem;
+}
+
+
+/* تخصيص القوائم */
+
+ul,
+ol {
+    padding-right: 1.5rem;
+}
+
+
+/* تخصيص الروابط في الفوتر */
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-color) !important;
+}
+
+
+/* ---------- Navbar - sticky + transition ---------- */
+
+.navbar {
+    transition: background-color 0.35s ease, box-shadow 0.35s ease, padding 0.25s ease;
+    padding: 0.65rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+
+/* الحالة الافتراضية (شفاف/خلفية خفيفة) */
+
+.navbar:not(.scrolled) {
+    background-color: rgba(13, 110, 253, 0.9);
+    /* تعديل طفيف على primary bootstrap */
+    box-shadow: none;
+}
+
+
+/* عند التمرير - لون أغمق وظل خفيف */
+
+.navbar.scrolled {
+    background-color: rgba(10, 25, 47, 0.96) !important;
+    /* لون داكن عندما ينزل المستخدم */
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    padding: 0.45rem 1rem;
+}
+
+
+/* ---------- Brand (الشعار) ---------- */
+
+.navbar-brand img {
+    transition: transform 0.35s ease;
+    transform-origin: center;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+
+/* ---------- Links underline slide (RTL-friendly) ---------- */
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.95) !important;
+    transition: color 0.25s ease;
+    padding-bottom: 0.35rem;
+}
+
+
+/* الخط المتحرك تحت النص — في RTL نعمله من اليمين لليسار */
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    /* مهم للـ RTL */
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #ffb347, #ffcc33);
+    /* تدرج جميل */
+    transition: width 0.28s cubic-bezier(.2, .8, .2, 1);
+    border-radius: 2px;
+}
+
+
+/* عند المرور أو الحالة النشطة */
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-item .nav-link.active {
+    color: #ffeb99 !important;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after,
+.navbar-nav .nav-item .nav-link.active::after {
+    width: 100%;
+}
+
+
+/* ---------- Toggler animated (للموبايل) ---------- */
+
+.navbar-toggler {
+    border: none;
+    transition: transform 0.25s ease;
+}
+
+
+/* خطوط الـ toggler - تحويل عند الفتح */
+
+.navbar-toggler-icon {
+    background-image: none !important;
+    /* نخفي الأيقونة الافتراضية */
+    width: 26px;
+    height: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.28s ease, top 0.28s ease, opacity 0.28s ease;
+    border-radius: 2px;
+}
+
+.navbar-toggler-icon div {
+    top: 8px;
+}
+
+.navbar-toggler-icon::before {
+    top: 0;
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0;
+}
+
+
+/* حالة مفتوحة */
+
+
+/* نُنسّق الـ collapse عندما يكون مفتوح (Bootstrap يضيف .show عند الفتح) */
+
+.navbar-collapse.show {
+    background: rgba(10, 25, 47, 0.98);
+    /* خلفية للقائمة على الموبايل */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+/* أيقونة التوجلر (ثلاث خطوط) — نبنيها كـ عنصر داخل الزر */
+
+.navbar-toggler-icon {
+    background-image: none !important;
+    width: 26px;
+    height: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.28s ease, top 0.28s ease, opacity 0.28s ease;
+    border-radius: 2px;
+}
+
+.navbar-toggler-icon div {
+    top: 8px;
+}
+
+.navbar-toggler-icon::before {
+    top: 0;
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0;
+}
+
+
+/* حالة مفتوحة: نحول الخطين العلوي والسفلي الى شكل إكس */
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon div {
+    opacity: 0;
+}
+
+
+/* عندما يتحول التوجلر لفتح */
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon div {
+    opacity: 0;
+}
+
+
+/* تحسين لتباعد الروابط داخل collapse */
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        background: rgba(10, 25, 47, 0.98);
+        padding: 1rem;
+        border-radius: 8px;
+    }
+    .navbar-nav .nav-link {
+        padding: .5rem 1rem;
+    }
+}
