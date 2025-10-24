@@ -3,7 +3,6 @@
     --secondary-color: #7d14fd;
     --light-color: #f8f9fa;
     --dark-color: #212529;
-    
     /* Light theme colors */
     --bg-color: #ffffff;
     --text-color: #333333;
@@ -21,7 +20,9 @@
     --hover-bg: #f8f9fa;
 }
 
+
 /* Dark theme colors */
+
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
     --text-color: #e9ecef;
@@ -549,7 +550,9 @@ footer a:hover {
     }
 }
 
+
 /* Dark mode specific styles */
+
 [data-theme="dark"] .card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
@@ -597,7 +600,9 @@ footer a:hover {
     color: var(--text-color);
 }
 
+
 /* Theme toggle button styles */
+
 #themeToggle {
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: transparent;
@@ -620,7 +625,9 @@ footer a:hover {
     border-color: var(--primary-color);
 }
 
+
 /* Comprehensive font color fixes for dark mode */
+
 [data-theme="dark"] p,
 [data-theme="dark"] .card-text,
 [data-theme="dark"] .card-body,
@@ -728,7 +735,9 @@ footer a:hover {
     color: var(--text-color);
 }
 
+
 /* Fix for Bootstrap's text utility classes in dark mode */
+
 [data-theme="dark"] .text-dark {
     color: var(--text-color) !important;
 }
@@ -741,7 +750,9 @@ footer a:hover {
     color: #adb5bd !important;
 }
 
+
 /* Fix for Bootstrap's background utility classes in dark mode */
+
 [data-theme="dark"] .bg-white {
     background-color: var(--card-bg) !important;
 }
@@ -750,7 +761,9 @@ footer a:hover {
     background-color: var(--hover-bg) !important;
 }
 
+
 /* Fix for navbar text in dark mode */
+
 [data-theme="dark"] .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.95) !important;
 }
@@ -761,7 +774,9 @@ footer a:hover {
     color: #ffeb99 !important;
 }
 
+
 /* Fix for dropdown menus in dark mode */
+
 [data-theme="dark"] .dropdown-menu {
     background-color: var(--card-bg);
     border-color: var(--border-color);
@@ -777,7 +792,9 @@ footer a:hover {
     color: var(--text-color);
 }
 
+
 /* Fix for modal dialogs in dark mode */
+
 [data-theme="dark"] .modal-content {
     background-color: var(--card-bg);
     border-color: var(--border-color);
@@ -795,13 +812,17 @@ footer a:hover {
     color: var(--text-color);
 }
 
+
 /* Fix for tooltips in dark mode */
+
 [data-theme="dark"] .tooltip .tooltip-inner {
     background-color: var(--dark-color);
     color: var(--text-color);
 }
 
+
 /* Fix for popovers in dark mode */
+
 [data-theme="dark"] .popover {
     background-color: var(--card-bg);
     border-color: var(--border-color);
@@ -817,7 +838,9 @@ footer a:hover {
     color: var(--text-color);
 }
 
+
 /* Footer dark mode compatibility */
+
 [data-theme="dark"] footer {
     background-color: var(--footer-bg) !important;
     color: var(--footer-text) !important;
